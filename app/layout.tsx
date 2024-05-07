@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <>
       <head>
-        <title>comm</title>
+        <title>react-playground</title>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <html lang="en">
