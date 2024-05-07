@@ -1,22 +1,14 @@
-import axios from 'axios';
-
-import { config } from '@/config/config';
-
-const { apiUrl } = config;
-
-type Product = {
+interface Product {
+  id: string;
   name: string;
   price: number;
-};
+  imageUrl: string;
+}
 
 const fetchProducts = async (): Promise<Product[] | undefined> => {
-  const { data } = await axios.get<Product[]>(`${apiUrl}/products`, {
-    headers: {
-      Authorization: `Bearer 123`,
-    },
-  });
+  const products = await fetch(`/api/products`);
 
-  return data;
+  return products.json();
 };
 
-export { fetchProducts };
+export { fetchProducts, type Product };
