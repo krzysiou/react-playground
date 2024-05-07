@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 
-import logo from '../../../../public/images/github.png';
+import logo from '../../../../public/images/arrow.svg';
 
-const GitHubIcon: React.FC = () => {
+const ArrowIcon: React.FC = () => {
   return <Image src={logo} width={50} height={50} alt="github" />;
 };
 
-export { GitHubIcon };
+export { ArrowIcon };

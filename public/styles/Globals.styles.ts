@@ -8,9 +8,10 @@ const { fontFamily, colors } = styleVariables;
 
 const Globals = createGlobalStyle`
   body {
+    width: 100%;
     font-family: ${fontFamily};
-    color: ${colors.main};
-    background-color: ${colors.light};
+    color: ${colors.white};
+    background-color: ${colors.gunmetalDark};
   }
 `;
 

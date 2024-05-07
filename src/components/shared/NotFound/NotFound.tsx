@@ -10,8 +10,8 @@ const NotFound: React.FC = () => {
   return (
     <NotFoundStyled>
       <Error404Icon />
-      <div>Oops you might be lost . . .</div>
-      <Link href="/">Go to main page</Link>
+      <p className="hero">404 Page not found . . .</p>
+      <Link href="/">Home</Link>
     </NotFoundStyled>
   );
 };

@@ -5,7 +5,6 @@ import React from 'react';
 import { StyledComponentsRegistry } from './registry';
 import { Reset } from '../public/styles/Reset.styles';
 import { Globals } from '../public/styles/Globals.styles';
-import { Footer } from '../src/components/shared/Footer/Footer';
 import { Header } from '../src/components/shared/Header/Header';
 
 export default function RootLayout({
@@ -26,7 +25,6 @@ export default function RootLayout({
           <body>
             <Header />
             {children}
-            <Footer />
           </body>
         </StyledComponentsRegistry>
       </html>
